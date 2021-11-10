@@ -1,5 +1,5 @@
-<?php
-require 'admin/config.php';
+<?php session_start();
+require 'models/config.php';
 require 'functions.php';
 
 $conexion = conexion($bd_config);
@@ -9,7 +9,14 @@ if (!$conexion) {
 	/*echo "Error";*/
 }
 
+// if (isset($_SESSION['usuario_correo'])) {
+// 	header('Location: models/listar.php');
+// } else {
+// 	header('Location: models/registrar.php');
+// }
 
-
-
-require 'views/index.views.php';
+if (isset($_SESSION['usuario_correo'])) {
+	require 'views/index.views.php';
+} else {
+	header('Location: models/login.php');
+}

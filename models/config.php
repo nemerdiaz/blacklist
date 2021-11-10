@@ -1,12 +1,12 @@
 <?php 
 
-define('RUTA', 'http://localhost:8080/Excel/');
+define('RUTA', 'http://localhost/blacklist/');
 
 $bd_config = array (
 	'server' => 'localhost',
 	'usuario' => 'root',
 	'pass' => '',
-	'basedatos' => 'blacklist'
+	'basedatos' => 'clientesblack'
 );
 
 /*$login_admin = array(

@@ -1,6 +1,7 @@
 <?php 
-require 'admin/config.php';
+require 'models/config.php';
 require 'views/header.php';
+
  ?>
 
  <div class="container">
@@ -12,6 +13,4 @@ require 'views/header.php';
  	
  </div>
 
- <?php 
-require 'views/footer.php';
-  ?>
+ <?php require 'views/footer.php';  ?>
